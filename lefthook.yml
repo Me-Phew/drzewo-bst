@@ -1,0 +1,13 @@
+pre-commit:
+  commands:
+    build:
+      run: npm run build
+
+    generate-docs:
+      root: /
+      run: doxygen && ./docs/doxygen/latex/make.bat
+
+commit-msg:
+  commands:
+    validate_commit_message:
+      run: npx commitlint --edit
