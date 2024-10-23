@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(ProjectName)
+project(BSTTree)
 
 set(SOURCES src/main.cpp)
 
-add_executable(ProjectName ${SOURCES})
+add_executable(BSTTree ${SOURCES})
 
 # Compile with all warnings, treat warnings as errors
 if (MSVC)
