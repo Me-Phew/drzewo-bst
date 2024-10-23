@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-doxygen-docs:
+  ci:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -48,11 +48,11 @@ jobs:
 
       - name: Prepare build artifacts
         run: |
-            cp ./build/linux-release/$PROJECT_NAME ./$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}-linux-x64
-            cp ./build/windows-release/$PROJECT_NAME.exe ./$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe
+            cp ./build/linux-release/${{ env.PROJECT_NAME }} ./${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}-linux-x64
+            cp ./build/windows-release/${{ env.PROJECT_NAME }}.exe ./${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe
 
       - name: Install Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -81,7 +81,7 @@ jobs:
           root_file: refman.tex
 
       - name: Prepare Doxygen PDF file
-        run: cp ./docs/doxygen/latex/refman.pdf ./Dokumentacja-Doxygen-$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}.pdf
+        run: cp ./docs/doxygen/latex/refman.pdf ./Dokumentacja-Doxygen-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf
 
       - name: Compile LaTeX documentation
         uses: xu-cheng/latex-action@3.2.0
@@ -92,7 +92,7 @@ jobs:
           root_file: dokument.tex
 
       - name: Prepare LaTeX PDF file
-        run: cp ./docs/dokument.pdf ./Dokumentacja-$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}.pdf
+        run: cp ./docs/dokument.pdf ./Dokumentacja-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf
 
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
@@ -100,4 +100,4 @@ jobs:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
-          artifacts: $PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}-linux-x64,$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe,Dokumentacja-$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}.pdf,./Dokumentacja-Doxygen-$PROJECT_NAME-${{ steps.tag_version.outputs.new_tag }}.pdf
+          artifacts: ${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}-linux-x64,${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe,Dokumentacja-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf,./Dokumentacja-Doxygen-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf
