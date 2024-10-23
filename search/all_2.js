@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['licencja_20a_0',['&lt;a name=&quot;license&quot;&gt; Licencja&lt;/a&gt;',['../md_README.html#autotoc_md4',1,'']]],
-  ['license_20licencja_20a_1',['&lt;a name=&quot;license&quot;&gt; Licencja&lt;/a&gt;',['../md_README.html#autotoc_md4',1,'']]],
-  ['list_2',['List',['../classList.html',1,'']]]
+  ['drzewa_20bst_20w_20c_0',['Implementacja drzewa BST w C++',['../md_README.html#autotoc_md0',1,'']]]
 ];

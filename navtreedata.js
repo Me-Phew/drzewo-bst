@@ -24,15 +24,9 @@
 */
 var NAVTREE =
 [
-  [ "Project Name", "index.html", [
+  [ "Drzewo BST", "index.html", [
     [ "README", "md_README.html", [
-      [ "Programowanie zaawansowane - szablon", "md_README.html#autotoc_md0", [
-        [ "Spis treci", "md_README.html#autotoc_md1", [
-          [ "Uycie", "md_README.html#autotoc_md2", null ],
-          [ "Funkcjonalno", "md_README.html#autotoc_md3", null ],
-          [ "Licencja", "md_README.html#autotoc_md4", null ]
-        ] ]
-      ] ]
+      [ "Implementacja drzewa BST w C++", "md_README.html#autotoc_md0", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
