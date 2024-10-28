@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['List',['../classList.html',1,'']]]
+  ['bstree_0',['BSTree',['../classBSTree.html',1,'']]]
 ];

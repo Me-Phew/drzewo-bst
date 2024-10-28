@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_20c_0',['Implementacja drzewa BST w C++',['../md_README.html#autotoc_md0',1,'']]]
+  ['readme_0',['README',['../md_README.html',1,'']]]
 ];
