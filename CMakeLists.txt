@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(BSTTree)
+project(BinarySearchTree)
 
 set(SOURCES src/main.cpp)
 
-add_executable(BSTTree ${SOURCES})
+add_executable(BinarySearchTree ${SOURCES})
 
 # Compile with all warnings, treat warnings as errors
 if (MSVC)

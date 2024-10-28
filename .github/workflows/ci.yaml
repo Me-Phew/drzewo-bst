@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: write
     env:
-      PROJECT_NAME: 'BSTTree'
+      PROJECT_NAME: 'BinarySearchTree'
     steps:
       - name: Get latest code
         uses: actions/checkout@v4
