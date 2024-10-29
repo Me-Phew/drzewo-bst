@@ -86,11 +86,11 @@ jobs:
         with:
           extra_system_packages: "inkscape"
           latexmk_shell_escape: true
-          working_directory: ./docs
+          working_directory: ./docs/dokumentacja
           root_file: dokument.tex
 
       - name: Prepare LaTeX PDF file
-        run: cp ./docs/dokument.pdf ./Dokumentacja-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf
+        run: cp ./docs/dokumentacja/dokument.pdf ./Dokumentacja-${{ env.PROJECT_NAME }}-${{ steps.tag_version.outputs.new_tag }}.pdf
 
       - name: Create a GitHub release
         if: github.ref == 'refs/heads/main'
