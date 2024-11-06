@@ -12,6 +12,9 @@
 #define BINARY_SEARCH_TREE_HPP
 
 #include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
 
 enum BinaryTreeTraversalMethod {
   PREORDER = 1,
@@ -50,12 +53,11 @@ private:
   Node* _removeItem(Node* node, int value);
 
   void _removeAllNodes(Node* node);
-
-  void _findPathToItem(const Node* node, int value);
-
+  void _findPathToItem(const Node* node, int value, std::vector<int>& path) const;
   void _traversePreorder(Node* node);
   void _traverseInorder(Node* node);
   void _traversePostorder(Node* node);
+  void _saveToTextFile(Node* node, std::ofstream& file);
 
 public:
   BinarySearchTree();

@@ -100,7 +100,7 @@ int App::run() {
 }
 
 void App::handleInsertItem() {
-  std::cout << "Podaj wartosc: ";
+  std::cout << "Podaj wartość: ";
   int value;
   std::cin >> value;
 
@@ -108,7 +108,7 @@ void App::handleInsertItem() {
 }
 
 void App::handleDeleteItem() {
-  std::cout << "Podaj wartosc: ";
+  std::cout << "Podaj wartość: ";
   int value;
   std::cin >> value;
 
@@ -116,7 +116,7 @@ void App::handleDeleteItem() {
 }
 
 void App::handleFindPathToItem() {
-  std::cout << "Podaj wartosc: ";
+  std::cout << "Podaj wartość: ";
   int value;
   std::cin >> value;
 
@@ -124,7 +124,7 @@ void App::handleFindPathToItem() {
 }
 
 void App::handleDisplayTree() {
-  std::cout << "Wybierz metodę przejścia: ";
+  std::cout << "Wybierz metodę przejścia: \n";
   std::cout << "1. PREORDER\n";
   std::cout << "2. INORDER\n";
   std::cout << "3. POSTORDER\n\n";
@@ -142,12 +142,12 @@ void App::handleDeleteTree() {
 
 void App::handleSaveTree() {
   // TODO
-  std::cout << "Podaj sciezke do pliku: ";
+  std::cout << "Podaj ścieżke do pliku: ";
 }
 
 void App::handleLoadTree() {
   // TODO
-  std::cout << "Podaj sciezke do pliku: ";
+  std::cout << "Podaj ścieżke do pliku: ";
 }
 
 int App::handleExit() {
