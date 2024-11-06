@@ -59,16 +59,22 @@ int App::mainMenu() {
     switch (selectedOption) {
     case INSERT_ITEM:
       handleInsertItem();
+      break;
     case DELETE_ITEM:
       handleDeleteItem();
+      break;
     case FIND_PATH_TO_ITEM:
       handleFindPathToItem();
+      break;
     case DISPLAY_TREE:
       handleDisplayTree();
+      break;
     case SAVE_TREE:
       handleSaveTree();
+      break;
     case LOAD_TREE:
       handleLoadTree();
+      break;
     case EXIT: {
       return handleExit();
     }
