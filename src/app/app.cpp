@@ -75,6 +75,12 @@ int App::mainMenu() {
     case LOAD_TREE:
       handleLoadTree();
       break;
+    case LOAD_TREE_TEXT:
+        handleLoadTextFile(true);  // czyści istniejące drzewo
+        break;
+    case LOAD_TREE_TEXT_APPEND:
+        handleLoadTextFile(false);  // dodaje do istniejącego drzewa
+        break;
     case EXIT: {
       return handleExit();
     }
@@ -150,11 +156,42 @@ void App::handleSaveTree() {
 }
 
 void App::handleLoadTree() {
-  // TODO
-  std::cout << "Podaj ścieżke do pliku: ";
+  std::cout << "Podaj ścieżkę do pliku do wczytania: ";
+  std::string filename;
+  std::cin >> filename;
+
+  binarySearchTree.loadFromTextFile(filename);
+  std::cout << "Drzewo zostało wczytane z pliku " << filename << ".\n";
 }
 
 int App::handleExit() {
   std::cout << "Dziękujemy za korzystanie z programu\n";
   return 0;
+}
+
+void App::handleSaveBinaryTree() {
+    std::cout << "Podaj ścieżkę do pliku binarnego do zapisu: ";
+    std::string filename;
+    std::cin >> filename;
+
+    binarySearchTree.saveToBinaryFile(filename);
+    std::cout << "Drzewo zostało zapisane binarnie do pliku " << filename << ".\n";
+}
+
+void App::handleLoadBinaryTree() {
+    std::cout << "Podaj ścieżkę do pliku binarnego do wczytania: ";
+    std::string filename;
+    std::cin >> filename;
+
+    binarySearchTree.loadFromBinaryFile(filename);
+    std::cout << "Drzewo zostało wczytane binarnie z pliku " << filename << ".\n";
+}
+
+void App::handleLoadTextFile(bool clearExisting) {
+    std::cout << "Podaj ścieżkę do pliku tekstowego: ";
+    std::string filename;
+    std::cin >> filename;
+
+    binarySearchTree.loadFromTextFile(filename, clearExisting);
+    std::cout << "Drzewo zostało wczytane z pliku tekstowego " << filename << ".\n";
 }

@@ -11,9 +11,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+#include <functional>
 
 #include "binary_search_tree.hpp"
-#include <vector>
 
 std::istream& operator>>(std::istream& iStream, BinaryTreeTraversalMethod& traversalMethod) {
     int num;
@@ -169,4 +170,60 @@ void BinarySearchTree::saveToTextFile(const std::string& filename) {
     } else {
         std::cerr << "Nie można otworzyć pliku: " << filename << std::endl;
     }
+}
+
+void BinarySearchTree::saveToBinaryFile(const std::string& filename) const {
+    std::ofstream file(filename, std::ios::binary);
+    if (!file.is_open()) {
+        std::cerr << "Nie można otworzyć pliku do zapisu: " << filename << std::endl;
+        return;
+    }
+
+    std::function<void(Node*)> saveInorder = [&](Node* node) {
+        if (node == nullptr) return;
+        saveInorder(node->left);
+        file.write(reinterpret_cast<char*>(&node->key), sizeof(node->key));
+        saveInorder(node->right);
+    };
+
+    saveInorder(root);
+    file.close();
+}
+
+
+void BinarySearchTree::loadFromTextFile(const std::string& filename, bool clearExisting) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Nie można otworzyć pliku: " << filename << std::endl;
+        return;
+    }
+
+    if (clearExisting) {
+        destroy();
+    }
+
+    int value;
+    while (file >> value) {
+        addItem(value);
+    }
+
+    file.close();
+}
+
+void BinarySearchTree::loadFromBinaryFile(const std::string& filename) {
+    std::ifstream file(filename, std::ios::binary);
+    if (!file.is_open()) {
+        std::cerr << "Nie można otworzyć pliku do odczytu: " << filename << std::endl;
+        return;
+    }
+
+    // Opcjonalne wyczyszczenie istniejącego drzewa
+    destroy();
+
+    int value;
+    while (file.read(reinterpret_cast<char*>(&value), sizeof(value))) {
+        addItem(value);
+    }
+
+    file.close();
 }

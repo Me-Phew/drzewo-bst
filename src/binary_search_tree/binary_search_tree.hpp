@@ -58,6 +58,9 @@ private:
   void _traverseInorder(Node* node);
   void _traversePostorder(Node* node);
   void _saveToTextFile(Node* node, std::ofstream& file);
+  void _loadFromTextFile(Node* node, std::ofstream& file);
+  void _saveToBinaryFile(const Node* node, std::ofstream& file) const;
+  void _loadFromBinaryFile(Node* node, std::ofstream& file);
 
 public:
   BinarySearchTree();
@@ -90,14 +93,40 @@ public:
    */
   void findPathToItem(int value);
 
+  /**
+   * @brief Wyświetlenie drzewa
+   * 
+   * @param traversalMethod 
+   */
   void display(BinaryTreeTraversalMethod traversalMethod);
 
   /**
    * @brief Zapisuje wygenerowane drzewo do pliku tekstowego
    *
+   * @param filename
    */
   void saveToTextFile(const std::string& filename);
 
+  /**
+   * @brief Wczytanie drzewa z pliku tekstowego
+   * 
+   * @param filename 
+   */
+  void loadFromTextFile(const std::string& filename, bool clearExisting = true);
+
+  /**
+   * @brief Zapis drzewa do pliku binarnego
+   * 
+   * @param filename 
+   */
+  void saveToBinaryFile(const std::string& filename) const;
+
+  /**
+   * @brief Wczytania drzewa z pliku binarnego
+   * 
+   * @param filename 
+   */
+  void loadFromBinaryFile(const std::string& filename);
 };
 
 #endif /* BINARY_SEARCH_TREE_HPP */

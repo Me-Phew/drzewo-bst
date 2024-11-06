@@ -25,7 +25,8 @@ enum MenuOption {
   DELETE_TREE,
   SAVE_TREE,
   LOAD_TREE,
-
+  LOAD_TREE_TEXT,
+  LOAD_TREE_TEXT_APPEND,
   EXIT                        ///< Zakończ działanie aplikacji.
 };
 
@@ -62,6 +63,11 @@ class App {
 
   static void handleLoadTree();
 
+  static void handleSaveBinaryTree();
+
+  static void handleLoadBinaryTree();
+
+  static void handleLoadTextFile(bool clearExisting);
   // Funkcja zakończenia działania aplikacji
 
   /// @brief Obsługuje zakończenie działania aplikacji.
