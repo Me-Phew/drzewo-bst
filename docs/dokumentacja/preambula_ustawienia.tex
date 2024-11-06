@@ -51,7 +51,7 @@
         \else\textbf{#1 }%
     \fi%
     (str.~\pageref{todopage:\thetodo})\ #2}
-\renewcommand{\todoname}{Do zrobienia...}
+\renewcommand{\todoname}{Do zrobienia\ldots}
 \renewcommand{\todomark}{~uzupełnić}
 
 % ------------------------------------------------------------------------
@@ -95,4 +95,15 @@
             \label{#4}
         \end{center}
     \end{figure}
+}
+
+\newcommand*{\Oznacz}[2]{\ref{#1:#2} (s.~\pageref{#1:#2})
+}
+
+\newcommand*{\OznaczZdjecie}[1]{
+    Rysunek \Oznacz{rys}{#1}
+}
+
+\newcommand*{\OznaczKod}[1]{
+    \Oznacz{lst}{#1}
 }

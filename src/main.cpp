@@ -1,17 +1,15 @@
 /**
- * @file BSTree.h
- * @author Marcin & Mateusz
+ * @file main.cpp
+ * @author Marcin Dudek & Mateusz Basiaga
  * @brief Binary Search Tree
- * @version 0.1
- * @date 2024-10-23
+ * @date 2024-11-06
  *
  * @copyright Copyright (c) 2024
  *
  */
 
-#include <iostream>
-
-#include "BST.h"
+#include "app/app.hpp"
 
 int main() {
+  return App::run();
 }
