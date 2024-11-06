@@ -51,16 +51,12 @@ class App {
   static void handleInsertItem();
 
   static void handleDeleteItem();
-  
+
   static void handleFindPathToItem();
 
   static void handleDisplayTree();
 
   static void handleDeleteTree();
-
-  static void handleSaveTree();
-
-  static void handleLoadTree();
 
   static void handleSaveBinaryTree();
 
