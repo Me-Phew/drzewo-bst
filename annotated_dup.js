@@ -1,4 +1,5 @@
 var annotated_dup =
 [
-    [ "BSTree", "classBSTree.html", "classBSTree" ]
+    [ "App", "classApp.html", null ],
+    [ "BinarySearchTree", "classBinarySearchTree.html", "classBinarySearchTree" ]
 ];

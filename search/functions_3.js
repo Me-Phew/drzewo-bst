@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['postorderbst_0',['postorderBST',['../classBSTree.html#a85893b8aba4dec53b406d8cc87e73806',1,'BSTree']]],
-  ['preorderbst_1',['preorderBST',['../classBSTree.html#aa84864a18d60908c52106e6aa43c03c3',1,'BSTree']]]
+  ['loadfrombinaryfile_0',['loadFromBinaryFile',['../classBinarySearchTree.html#acb40a740eedd0ea87078ed5c88ee868b',1,'BinarySearchTree']]],
+  ['loadfromtextfile_1',['loadFromTextFile',['../classBinarySearchTree.html#adfb9c9de8ad646ef8199209776fa743c',1,'BinarySearchTree']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addelement_0',['addElement',['../classBSTree.html#afd33da8f6f62274b6642568ca7540c9b',1,'BSTree']]]
+  ['additem_0',['addItem',['../classBinarySearchTree.html#a569f6481ead5d87f27292512453ae4d6',1,'BinarySearchTree']]]
 ];

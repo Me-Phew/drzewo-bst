@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inorderbst_0',['inorderBST',['../classBSTree.html#a8b4a95c444db7443dc89148ae81c27ea',1,'BSTree']]]
+  ['findpathtoitem_0',['findPathToItem',['../classBinarySearchTree.html#a2a91be3c89fd7697a1c18bd95fc149db',1,'BinarySearchTree']]]
 ];

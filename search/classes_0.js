@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bstree_0',['BSTree',['../classBSTree.html',1,'']]]
+  ['app_0',['App',['../classApp.html',1,'']]]
 ];
