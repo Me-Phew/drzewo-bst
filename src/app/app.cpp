@@ -37,11 +37,13 @@ int App::mainMenu() {
     std::cout << "---ZARZĄDZANIE DRZEWEM---\n";
     std::cout << "4. Wyświetl drzewo\n";
     std::cout << "5. Wyczyść drzewo\n";
-    std::cout << "6. Zapisz drzewo\n";
-    std::cout << "7. Wczytaj drzewo\n\n";
+    std::cout << "6. Zapisz drzewo do pliku binarnego\n";
+    std::cout << "7. Wczytaj drzewo z pliku binarnego\n";
+    std::cout << "8. Wczytaj drzewo z pliku tekstowego (czyści istniejące drzewo)\n";
+    std::cout << "9. Wczytaj drzewo z pliku tekstowego (dodaje do istniejącego drzewa)\n\n";
 
     std::cout << "---OPCJE---\n";
-    std::cout << "8. Wyjdź\n\n";
+    std::cout << "10. Wyjdź\n\n";
 
     std::cout << "Wybierz działanie: ";
 
