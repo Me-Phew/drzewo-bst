@@ -1,11 +1,14 @@
 /**
  * @file app.cpp
- * @author Marcin Dudek & Mateusz Basiaga
- * @brief
+ * @brief Implementacja menu aplikacji zarządzającej drzewem wyszukiwań binarnych.
+ * @details Zawiera definicje metod obsługi interfejsu użytkownika, takich jak dodawanie i usuwanie elementów,
+ * przeszukiwanie, wyświetlanie oraz zapis i odczyt drzewa z plików.
  * @date 2024-11-06
+ * @authors
+ * - Marcin Dudek
+ * - Mateusz Basiaga
  *
  * @copyright Copyright (c) 2024
- *
  */
 
 #ifdef _WIN32

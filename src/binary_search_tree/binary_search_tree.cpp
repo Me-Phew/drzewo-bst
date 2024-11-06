@@ -1,11 +1,14 @@
 /**
  * @file binary_search_tree.cpp
- * @author Marcin Dudek & Mateusz Basiaga
- * @brief Binary Search Tree
+ * @brief Implementacja metod klasy BinarySearchTree.
+ * @details Zawiera definicje metod klasy BinarySearchTree, obsługujące operacje na drzewie BST, takie jak dodawanie, usuwanie,
+ * znajdowanie ścieżek, wyświetlanie oraz zapisywanie i wczytywanie z plików.
  * @date 2024-10-23
+ * @authors
+ * - Marcin Dudek
+ * - Mateusz Basiaga
  *
  * @copyright Copyright (c) 2024
- *
  */
 
 #include <iostream>
@@ -165,9 +168,16 @@ void BinarySearchTree::saveToBinaryFile(const std::string& filename) const {
     std::function<void(Node*)> saveInorder = [&](Node* node) {
         if (node == nullptr) return;
         saveInorder(node->left);
+        /*
+         reinterpret_cast jest używany do konwersji wskaźników lub referencji na różne typy,
+         nawet jeżeli te typy nie są ze sobą związane w hierarchii dziedziczenia. W kontekście tego kodu,
+         reinterpret_cast jest używane do przekształcenia wskaźnika na typ int* (wskazującego na node->key,
+         który jest typu int) na wskaźnik do typu char*. Jest to niezbędne, ponieważ funkcja file.write
+          wymaga wskaźnika na dane w postaci tablicy bajtów (czyli char*), a nie na dane typu int.
+        */
         file.write(reinterpret_cast<char*>(&node->key), sizeof(node->key));
         saveInorder(node->right);
-    };
+        };
 
     saveInorder(root);
     file.close();

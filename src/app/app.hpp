@@ -1,11 +1,14 @@
 /**
  * @file app.hpp
- * @author Marcin Dudek & Mateusz Basiaga
- * @brief
+ * @brief Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych.
+ * @details Plik nagłówkowy zawiera deklaracje klas i funkcji umożliwiających zarządzanie
+ * drzewem binarnym poprzez interaktywne menu.
  * @date 2024-11-06
+ * @authors
+ * - Marcin Dudek
+ * - Mateusz Basiaga
  *
  * @copyright Copyright (c) 2024
- *
  */
 
 #ifndef APP_HPP
@@ -17,16 +20,18 @@
  /// @brief Wyliczenie opcji dostępnych w menu.
  /// Definiuje różne operacje, które użytkownik może wybrać w aplikacji.
 enum MenuOption {
-  INSERT_ITEM = 1,
-  DELETE_ITEM,
-  FIND_PATH_TO_ITEM,
-  DISPLAY_TREE,
-  DELETE_TREE,
-  SAVE_TREE,
-  LOAD_TREE,
-  LOAD_TREE_TEXT,
-  LOAD_TREE_TEXT_APPEND,
-  EXIT                        ///< Zakończ działanie aplikacji.
+  INSERT_ITEM = 1,            ///< Wstawienie elementu do drzewa.
+  DELETE_ITEM,                ///< Usunięcie elementu z drzewa.
+  FIND_PATH_TO_ITEM,          ///< Znalezienie ścieżki do wybranego elementu.
+
+  DISPLAY_TREE,               ///< Wyświetlenie struktury drzewa.
+  DELETE_TREE,                ///< Usunięcie całego drzewa.
+  SAVE_TREE,                  ///< Zapisanie drzewa do pliku.
+  LOAD_TREE,                  ///< Wczytanie drzewa z pliku binarnego.
+  LOAD_TREE_TEXT,             ///< Wczytanie drzewa z pliku tekstowego (zastąpienie obecnego).
+  LOAD_TREE_TEXT_APPEND,      ///< Wczytanie drzewa z pliku tekstowego (dodanie do obecnego).
+
+  EXIT                        ///< Zakończenie działania aplikacji.
 };
 
 /// @brief Przeciążenie operatora >> do wyboru opcji menu.
@@ -48,22 +53,30 @@ class App {
   /// @return Wybrana opcja menu.
   static int mainMenu();
 
+  /// @brief Obsługuje wstawianie nowego elementu do drzewa.
   static void handleInsertItem();
 
+  /// @brief Obsługuje usuwanie wybranego elementu z drzewa.
   static void handleDeleteItem();
 
+  /// @brief Obsługuje wyszukiwanie ścieżki do wybranego elementu w drzewie.
   static void handleFindPathToItem();
 
+  /// @brief Wyświetla strukturę drzewa na standardowym wyjściu.
   static void handleDisplayTree();
 
+  /// @brief Usuwa całe drzewo z pamięci.
   static void handleDeleteTree();
 
+  /// @brief Zapisuje obecny stan drzewa do pliku binarnego.
   static void handleSaveBinaryTree();
 
+  /// @brief Wczytuje stan drzewa z pliku binarnego.
   static void handleLoadBinaryTree();
 
+  /// @brief Wczytuje stan drzewa z pliku tekstowego.
+  /// @param clearExisting Flaga określająca, czy istniejące drzewo powinno zostać wyczyszczone przed wczytaniem nowego.
   static void handleLoadTextFile(bool clearExisting);
-  // Funkcja zakończenia działania aplikacji
 
   /// @brief Obsługuje zakończenie działania aplikacji.
   /// @return Kod wyjścia z aplikacji.
