@@ -141,8 +141,12 @@ void App::handleDeleteTree() {
 }
 
 void App::handleSaveTree() {
-  // TODO
-  std::cout << "Podaj ścieżke do pliku: ";
+  std::cout << "Podaj ścieżkę do pliku do zapisu: ";
+  std::string filename;
+  std::cin >> filename;
+
+  binarySearchTree.saveToTextFile(filename);
+  std::cout << "Drzewo zostało zapisane do pliku " << filename << ".\n";
 }
 
 void App::handleLoadTree() {
