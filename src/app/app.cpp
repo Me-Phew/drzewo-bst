@@ -72,7 +72,7 @@ int App::mainMenu() {
       handleDisplayTree();
       break;
     case SAVE_TREE:
-      handleSaveTree();
+      handleSaveBinaryTree();
       break;
     case LOAD_TREE:
       handleLoadTree();
@@ -146,15 +146,6 @@ void App::handleDisplayTree() {
 
 void App::handleDeleteTree() {
   binarySearchTree.destroy();
-}
-
-void App::handleSaveTree() {
-  std::cout << "Podaj ścieżkę do pliku do zapisu: ";
-  std::string filename;
-  std::cin >> filename;
-
-  binarySearchTree.saveToTextFile(filename);
-  std::cout << "Drzewo zostało zapisane do pliku " << filename << ".\n";
 }
 
 void App::handleLoadTree() {

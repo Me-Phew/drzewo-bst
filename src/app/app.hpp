@@ -51,7 +51,7 @@ class App {
   static void handleInsertItem();
 
   static void handleDeleteItem();
-
+  
   static void handleFindPathToItem();
 
   static void handleDisplayTree();

@@ -57,7 +57,6 @@ private:
   void _traversePreorder(Node* node);
   void _traverseInorder(Node* node);
   void _traversePostorder(Node* node);
-  void _saveToTextFile(Node* node, std::ofstream& file);
   void _loadFromTextFile(Node* node, std::ofstream& file);
   void _saveToBinaryFile(const Node* node, std::ofstream& file) const;
   void _loadFromBinaryFile(Node* node, std::ofstream& file);
@@ -99,13 +98,6 @@ public:
    * @param traversalMethod 
    */
   void display(BinaryTreeTraversalMethod traversalMethod);
-
-  /**
-   * @brief Zapisuje wygenerowane drzewo do pliku tekstowego
-   *
-   * @param filename
-   */
-  void saveToTextFile(const std::string& filename);
 
   /**
    * @brief Wczytanie drzewa z pliku tekstowego

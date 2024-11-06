@@ -110,14 +110,6 @@ void BinarySearchTree::_traversePostorder(Node* node) {
     std::cout << node->key << " ";
 }
 
-void BinarySearchTree::_saveToTextFile(Node* node, std::ofstream& file) {
-    if (node == nullptr) {
-        return;
-    }
-    _saveToTextFile(node->left, file);
-    file << node->key << " ";
-    _saveToTextFile(node->right, file);
-}
 
 BinarySearchTree::BinarySearchTree() : root(nullptr) {}
 
@@ -162,15 +154,6 @@ void BinarySearchTree::display(BinaryTreeTraversalMethod traversalMethod) {
     std::cout << std::endl;
 }
 
-void BinarySearchTree::saveToTextFile(const std::string& filename) {
-    std::ofstream file(filename);
-    if (file.is_open()) {
-        _saveToTextFile(root, file);
-        file.close();
-    } else {
-        std::cerr << "Nie można otworzyć pliku: " << filename << std::endl;
-    }
-}
 
 void BinarySearchTree::saveToBinaryFile(const std::string& filename) const {
     std::ofstream file(filename, std::ios::binary);
