@@ -8,6 +8,8 @@
 \usepackage{amssymb}    %Różne symbole matematyczne.
 \usepackage{amsmath}    %Dodatkowe funkcje matematyczne, np. polecenie \dfac{}{} skladajace ulamek w trybie wystawionym (porównaj $\dfrac{1}{2}$, a $\frac{1}{2}$).
 
+\usepackage{csquotes}
+
 %język polski i klawiatura
 \usepackage[polish]{babel}
 %\usepackage{qtimes} % czcionka Times new Roman
@@ -21,9 +23,9 @@
 %bibliografia
 %\usepackage[numbers,sort&compress]{natbib}  %Porządkuje zawartość odnośników do literatury, np. [2-4,6]. Musi być pod pdf'em, a styl bibliogfafii musi mieć nazwę z dodatkiem 'nat', np. \bibliographystyle{unsrtnat} (w kolejności cytowania).
 \usepackage[
-backend=biber,
-style=numeric,
-sorting=none
+	backend=biber,
+	style=numeric,
+	sorting=none
 ]{biblatex}
 \addbibresource{bibliografia.bib}
 \usepackage{hypernat}                       %Potrzebna pakietowi natbib do wspolpracy z pakietem hyperref (wazna kolejnosc: 1. hyperref, 2. natbib, 3. hypernat).
@@ -73,21 +75,21 @@ sorting=none
 
 % Definicja stylu "mystyle"
 \lstdefinestyle{mystyle}{
-	backgroundcolor=\color{backcolour},   
+	backgroundcolor=\color{backcolour},
 	commentstyle=\color{codegreen},
 	keywordstyle=\color{blue},	%magenta
 	numberstyle=\tiny\color{codegray},
 	stringstyle=\color{codepurple},
 	basicstyle=\ttfamily\footnotesize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
 	showstringspaces=false,
-	showtabs=false,                  
+	showtabs=false,
 	tabsize=2
 }
 
@@ -99,8 +101,8 @@ sorting=none
 \pagestyle{fancy}
 \fancyhf{}
 % numery stron w paginie dolnej na srodku
-\fancyfoot[C]{\scriptsize DOKUMENTACJA PROJEKTU – ZAAWANSOWANE PROGRAMOWANIE \\ 
-\normalsize\sffamily  \thepage}
+\fancyfoot[C]{\scriptsize DOKUMENTACJA PROJEKTU – ZAAWANSOWANE PROGRAMOWANIE \\
+	\normalsize\sffamily  \thepage}
 
 
 %\fancyhead[L]{\small\sffamily \nouppercase{\leftmark}}

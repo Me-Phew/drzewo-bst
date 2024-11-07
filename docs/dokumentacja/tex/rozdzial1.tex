@@ -1,5 +1,44 @@
 \newpage
-\section{Ogólne określenie wymagań}		%1
-%Określenie celu pracy, co chcemy uzyskać, jakie przewidujemy wyniki
+\section{Ogólne określenie wymagań}
 
-\input{tex/template_tutorial.tex}
+Celem projektu jest stworzenie aplikacji w języku C++ umożliwiającej obsługę drzewa wyszukiwań binarnych (BST - Binary Search Tree) oraz umożliwiającej jego zarządzanie i wizualizację. Projekt realizowany jest z myślą o zdobyciu praktycznego doświadczenia z systemem kontroli wersji GitHub, przy pracy w grupie dwuosobowej, z zastosowaniem narzędzi do zarządzania kodem i dokumentacją.
+
+\subsection{Zakładany efekt końcowy}
+
+Efektem końcowym pracy jest aplikacja spełniająca wymagania funkcjonalne oraz strukturalne określone w specyfikacji. Działanie programu powinno umożliwić:
+\begin{itemize}
+  \item Dodawanie, usuwanie oraz przeszukiwanie elementów w drzewie binarnym;
+  \item Wyświetlanie struktury drzewa w różnych formach porządkowania (preorder, inorder, postorder);
+  \item Zapis i odczyt drzewa do/z pliku binarnego oraz tekstowego, co pozwoli na ponowne załadowanie drzewa bez utraty danych;
+  \item Wczytanie danych z pliku tekstowego i ich przekształcenie w strukturę drzewa BST, zarówno do pustego drzewa, jak i z możliwością łączenia z już istniejącą strukturą.
+\end{itemize}
+
+\subsection{Cele techniczne}
+
+Projekt został zaplanowany tak, aby spełnić poniższe cele techniczne:
+\begin{itemize}
+  \item Implementacja klasy \texttt{BinarySearchTree} realizującej główne operacje na drzewie BST: dodawanie, usuwanie, przeszukiwanie, wyświetlanie oraz zapis i odczyt z pliku;
+  \item Stworzenie dodatkowej klasy \texttt{App} odpowiedzialnej za zarządzanie drzewem poprzez menu interaktywne, obsługujące wybory użytkownika oraz wywołujące odpowiednie operacje na drzewie;
+  \item Rozdzielenie kodu źródłowego na moduły zgodnie z zasadami programowania obiektowego, w tym podział na pliki nagłówkowe i implementacyjne, aby ułatwić dalszy rozwój i testowanie kodu;
+  \item Wykorzystanie narzędzi GitHub do wersjonowania kodu, pracy równoległej oraz rozwiązywania konfliktów;
+  \item Stworzenie dokumentacji projektu z wykorzystaniem narzędzia \texttt{Doxygen} oraz dokumentacji w \LaTeX, aby opisać implementację, działanie oraz wyniki końcowe projektu.
+\end{itemize}
+
+\subsection{Wymagania dotyczące kontroli wersji i pracy zespołowej}
+
+W projekcie przewiduje się równoległą pracę dwuosobową, co wiąże się z określonymi wymaganiami:
+\begin{itemize}
+  \item Utworzenie repozytorium GitHub, które będzie śledzić postępy prac nad projektem;
+  \item Każdy z członków zespołu będzie odpowiedzialny za stworzenie nowej gałęzi w projekcie, wykonanie co najmniej 5 commitów i późniejsze połączenie tych zmian z główną gałęzią (tzw. \texttt{merge});
+  \item Projekt wymaga rozwiązania co najmniej 6 konfliktów w kodzie podczas łączenia gałęzi, co pozwala zdobyć doświadczenie w rozwiązywaniu problemów wynikających z pracy równoległej w zespole;
+  \item Zastosowanie narzędzi GitHub do przeglądu kodu, rozwiązywania konfliktów oraz dokumentowania zmian przy pomocy opisowych commitów.
+\end{itemize}
+
+\subsection{Oczekiwane wyniki}
+
+Projekt ma na celu uzyskanie aplikacji, która pozwoli użytkownikom na pełną kontrolę nad drzewem BST poprzez interfejs tekstowy. Przyjęte rozwiązania mają umożliwić:
+\begin{itemize}
+  \item Poprawne zarządzanie drzewem BST, w tym obsługę operacji modyfikujących i przeszukujących strukturę drzewa;
+  \item Wykorzystanie plików binarnych i tekstowych do utrwalenia stanu drzewa między sesjami programu;
+  \item Wytworzenie dokumentacji projektowej oraz technicznej, która opisze szczegóły implementacyjne oraz przedstawi wykresy procesu pracy grupowej i historii commitów z GitHuba.
+\end{itemize}
