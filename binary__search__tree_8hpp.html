@@ -51,7 +51,7 @@
             <tr id="projectrow">
               <td id="projectalign">
                 <div id="projectname">Drzewo BST<span
-                    id="projectnumber">&#160;v0.3.0</span>
+                    id="projectnumber">&#160;v0.3.1</span>
                 </div>
               </td>
             </tr>
@@ -128,7 +128,7 @@ $(function(){initNavTree('binary__search__tree_8hpp.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
-<p>Binary Search Tree.  
+<p>Implementacja drzewa przeszukiwań binarnych (BST).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -150,28 +150,59 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinarySearchTree.html">BinarySearchTree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa reprezentująca drzewo przeszukiwań binarnych (BST).  <a href="classBinarySearchTree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7130a834f6f47edcdd9f0b7f5e3118ed" id="r_a7130a834f6f47edcdd9f0b7f5e3118ed"><td class="memItemLeft" align="right" valign="top"><a id="a7130a834f6f47edcdd9f0b7f5e3118ed" name="a7130a834f6f47edcdd9f0b7f5e3118ed"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>BinaryTreeTraversalMethod</b> { <b>PREORDER</b> = 1
-, <b>INORDER</b>
-, <b>POSTORDER</b>
+<tr class="memitem:a7130a834f6f47edcdd9f0b7f5e3118ed" id="r_a7130a834f6f47edcdd9f0b7f5e3118ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a> { <a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118edacd9d91cf59c093fdfa2b1736a26125ce">PREORDER</a> = 1
+, <a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118eda541a7d029edbe0dc4855fa23ba23162b">INORDER</a>
+, <a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118eda9ab94412bf77ddc567d8cb5cd2996d44">POSTORDER</a>
  }</td></tr>
+<tr class="memdesc:a7130a834f6f47edcdd9f0b7f5e3118ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metody przeglądania drzewa BST. Definiuje kolejność odwiedzania węzłów w drzewie.  <a href="#a7130a834f6f47edcdd9f0b7f5e3118ed">More...</a><br /></td></tr>
 <tr class="separator:a7130a834f6f47edcdd9f0b7f5e3118ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1a70dcd289f4622da3844e852b2b4608" id="r_a1a70dcd289f4622da3844e852b2b4608"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a70dcd289f4622da3844e852b2b4608">operator&gt;&gt;</a> (std::istream &amp;iStream, BinaryTreeTraversalMethod &amp;traversalMethod)</td></tr>
-<tr class="memdesc:a1a70dcd289f4622da3844e852b2b4608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora &gt;&gt; do wyboru opcji.  <br /></td></tr>
+<tr class="memitem:a1a70dcd289f4622da3844e852b2b4608" id="r_a1a70dcd289f4622da3844e852b2b4608"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a70dcd289f4622da3844e852b2b4608">operator&gt;&gt;</a> (std::istream &amp;iStream, <a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a> &amp;traversalMethod)</td></tr>
+<tr class="memdesc:a1a70dcd289f4622da3844e852b2b4608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora &gt;&gt; do wyboru metody przeglądania drzewa.  <br /></td></tr>
 <tr class="separator:a1a70dcd289f4622da3844e852b2b4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Binary Search Tree. </p>
-<dl class="section author"><dt>Author</dt><dd>Marcin Dudek &amp; Mateusz Basiaga </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-10-23</dd></dl>
+<div class="textblock"><p>Implementacja drzewa przeszukiwań binarnych (BST). </p>
+<p>Plik nagłówkowy definiuje klasę <a class="el" href="classBinarySearchTree.html" title="Klasa reprezentująca drzewo przeszukiwań binarnych (BST).">BinarySearchTree</a>, która umożliwia operacje na drzewie BST, takie jak dodawanie, usuwanie, znajdowanie ścieżki, wyświetlanie oraz zapisywanie/wczytywanie drzewa z pliku. </p><dl class="section date"><dt>Date</dt><dd>2024-10-23 </dd></dl>
+<dl class="section author"><dt>Authors</dt><dd><ul>
+<li>Marcin Dudek</li>
+<li>Mateusz Basiaga</li>
+</ul>
+</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a7130a834f6f47edcdd9f0b7f5e3118ed" name="a7130a834f6f47edcdd9f0b7f5e3118ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7130a834f6f47edcdd9f0b7f5e3118ed">&#9670;&#160;</a></span>BinaryTreeTraversalMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metody przeglądania drzewa BST. Definiuje kolejność odwiedzania węzłów w drzewie. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7130a834f6f47edcdd9f0b7f5e3118edacd9d91cf59c093fdfa2b1736a26125ce" name="a7130a834f6f47edcdd9f0b7f5e3118edacd9d91cf59c093fdfa2b1736a26125ce"></a>PREORDER&#160;</td><td class="fielddoc"><p>Preorder traversal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7130a834f6f47edcdd9f0b7f5e3118eda541a7d029edbe0dc4855fa23ba23162b" name="a7130a834f6f47edcdd9f0b7f5e3118eda541a7d029edbe0dc4855fa23ba23162b"></a>INORDER&#160;</td><td class="fielddoc"><p>Inorder traversal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7130a834f6f47edcdd9f0b7f5e3118eda9ab94412bf77ddc567d8cb5cd2996d44" name="a7130a834f6f47edcdd9f0b7f5e3118eda9ab94412bf77ddc567d8cb5cd2996d44"></a>POSTORDER&#160;</td><td class="fielddoc"><p>Postorder traversal. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a1a70dcd289f4622da3844e852b2b4608" name="a1a70dcd289f4622da3844e852b2b4608"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a70dcd289f4622da3844e852b2b4608">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
 
@@ -186,16 +217,16 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BinaryTreeTraversalMethod &amp;</td>          <td class="paramname"><span class="paramname"><em>traversalMethod</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>traversalMethod</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Przeciążenie operatora &gt;&gt; do wyboru opcji. </p>
+<p>Przeciążenie operatora &gt;&gt; do wyboru metody przeglądania drzewa. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">iStream</td><td>Strumień wejściowy. </td></tr>
-    <tr><td class="paramname">traversalMethod</td><td>Enum, który należy ustawić. </td></tr>
+    <tr><td class="paramname">traversalMethod</td><td>Metoda przeglądania, którą należy ustawić. </td></tr>
   </table>
   </dd>
 </dl>

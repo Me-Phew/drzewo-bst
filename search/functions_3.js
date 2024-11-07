@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['loadfrombinaryfile_0',['loadFromBinaryFile',['../classBinarySearchTree.html#acb40a740eedd0ea87078ed5c88ee868b',1,'BinarySearchTree']]],
-  ['loadfromtextfile_1',['loadFromTextFile',['../classBinarySearchTree.html#adfb9c9de8ad646ef8199209776fa743c',1,'BinarySearchTree']]]
+  ['findpathtoitem_0',['findPathToItem',['../classBinarySearchTree.html#a2a91be3c89fd7697a1c18bd95fc149db',1,'BinarySearchTree']]]
 ];

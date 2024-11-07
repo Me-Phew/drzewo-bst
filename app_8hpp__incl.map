@@ -1,8 +1,8 @@
 <map id="src/app/app.hpp" name="src/app/app.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="42,5,155,31"/>
+<area shape="rect" id="Node000001" title="Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych." alt="" coords="42,5,155,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,168,77,193"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,33,69,80,49,153,43,151,64,78,88,30"/>
-<area shape="rect" id="Node000003" href="$binary__search__tree_8hpp.html" title="Binary Search Tree." alt="" coords="78,79,236,120"/>
+<area shape="rect" id="Node000003" href="$binary__search__tree_8hpp.html" title="Implementacja drzewa przeszukiwań binarnych (BST)." alt="" coords="78,79,236,120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,30,136,65,131,68,105,33"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="130,122,73,161,70,156,127,118"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="101,168,154,193"/>

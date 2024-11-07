@@ -51,7 +51,7 @@
             <tr id="projectrow">
               <td id="projectalign">
                 <div id="projectname">Drzewo BST<span
-                    id="projectnumber">&#160;v0.3.0</span>
+                    id="projectnumber">&#160;v0.3.1</span>
                 </div>
               </td>
             </tr>
@@ -127,6 +127,9 @@ $(function(){initNavTree('app_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">app.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="binary__search__tree_8hpp_source.html">../binary_search_tree/binary_search_tree.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -151,17 +154,17 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a5be5e47a3042bc91460d05e47f32120d" id="r_a5be5e47a3042bc91460d05e47f32120d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a> { <br />
-&#160;&#160;<b>INSERT_ITEM</b> = 1
-, <b>DELETE_ITEM</b>
-, <b>FIND_PATH_TO_ITEM</b>
-, <b>DISPLAY_TREE</b>
+&#160;&#160;<a class="el" href="#a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7">INSERT_ITEM</a> = 1
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507">DELETE_ITEM</a>
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735">FIND_PATH_TO_ITEM</a>
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9">DISPLAY_TREE</a>
 , <br />
-&#160;&#160;<b>DELETE_TREE</b>
-, <b>SAVE_TREE</b>
-, <b>LOAD_TREE</b>
-, <b>LOAD_TREE_TEXT</b>
+&#160;&#160;<a class="el" href="#a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65">DELETE_TREE</a>
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192">SAVE_TREE</a>
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc">LOAD_TREE</a>
+, <a class="el" href="#a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617">LOAD_TREE_TEXT</a>
 , <br />
-&#160;&#160;<b>LOAD_TREE_TEXT_APPEND</b>
+&#160;&#160;<a class="el" href="#a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007">LOAD_TREE_TEXT_APPEND</a>
 , <a class="el" href="#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">EXIT</a>
 <br />
  }</td></tr>
@@ -175,8 +178,13 @@ Functions</h2></td></tr>
 <tr class="separator:af4cc8f6d9deb89b3330b11b9587229f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Marcin Dudek &amp; Mateusz Basiaga </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-11-06</dd></dl>
+<div class="textblock"><p>Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych. </p>
+<p>Plik nagłówkowy zawiera deklaracje klas i funkcji umożliwiających zarządzanie drzewem binarnym poprzez interaktywne menu. </p><dl class="section date"><dt>Date</dt><dd>2024-11-06 </dd></dl>
+<dl class="section author"><dt>Authors</dt><dd><ul>
+<li>Marcin Dudek</li>
+<li>Mateusz Basiaga</li>
+</ul>
+</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a5be5e47a3042bc91460d05e47f32120d" name="a5be5e47a3042bc91460d05e47f32120d"></a>
@@ -193,7 +201,25 @@ Functions</h2></td></tr>
 
 <p>Wyliczenie opcji dostępnych w menu. Definiuje różne operacje, które użytkownik może wybrać w aplikacji. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f" name="a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f"></a>EXIT&#160;</td><td class="fielddoc"><p>Zakończ działanie aplikacji. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7" name="a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7"></a>INSERT_ITEM&#160;</td><td class="fielddoc"><p>Wstawienie elementu do drzewa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507" name="a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507"></a>DELETE_ITEM&#160;</td><td class="fielddoc"><p>Usunięcie elementu z drzewa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735" name="a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735"></a>FIND_PATH_TO_ITEM&#160;</td><td class="fielddoc"><p>Znalezienie ścieżki do wybranego elementu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9" name="a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9"></a>DISPLAY_TREE&#160;</td><td class="fielddoc"><p>Wyświetlenie struktury drzewa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65" name="a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65"></a>DELETE_TREE&#160;</td><td class="fielddoc"><p>Usunięcie całego drzewa. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192" name="a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192"></a>SAVE_TREE&#160;</td><td class="fielddoc"><p>Zapisanie drzewa do pliku. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc" name="a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc"></a>LOAD_TREE&#160;</td><td class="fielddoc"><p>Wczytanie drzewa z pliku binarnego. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617" name="a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617"></a>LOAD_TREE_TEXT&#160;</td><td class="fielddoc"><p>Wczytanie drzewa z pliku tekstowego (zastąpienie obecnego). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007" name="a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007"></a>LOAD_TREE_TEXT_APPEND&#160;</td><td class="fielddoc"><p>Wczytanie drzewa z pliku tekstowego (dodanie do obecnego). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f" name="a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f"></a>EXIT&#160;</td><td class="fielddoc"><p>Zakończenie działania aplikacji. </p>
 </td></tr>
 </table>
 

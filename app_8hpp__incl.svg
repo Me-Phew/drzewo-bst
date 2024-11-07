@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych.">
 <polygon fill="#999999" stroke="#666666" points="112.25,-141 27.25,-141 27.25,-121.75 112.25,-121.75 112.25,-141"/>
 <text text-anchor="middle" x="69.75" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/app/app.hpp</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="binary__search__tree_8hpp.html" target="_top" xlink:title="Binary Search Tree.">
+<g id="a_Node000003"><a xlink:href="binary__search__tree_8hpp.html" target="_top" xlink:title="Implementacja drzewa przeszukiwań binarnych (BST).">
 <polygon fill="white" stroke="#666666" points="173.12,-85.75 54.38,-85.75 54.38,-55.25 173.12,-55.25 173.12,-85.75"/>
 <text text-anchor="start" x="62.38" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">../binary_search_tree</text>
 <text text-anchor="middle" x="113.75" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">/binary_search_tree.hpp</text>

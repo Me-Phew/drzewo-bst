@@ -1,0 +1,16 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="Node000001" title="Punkt wejścia aplikacji zarządzającej drzewem wyszukiwań binarnych." alt="" coords="51,5,146,31"/>
+<area shape="rect" id="Node000002" href="$app_8hpp.html" title="Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych." alt="" coords="53,79,144,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,31,101,63,96,63,96,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,241,77,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,106,69,154,49,227,43,225,64,152,88,104"/>
+<area shape="rect" id="Node000004" href="$binary__search__tree_8hpp.html" title="Implementacja drzewa przeszukiwań binarnych (BST)." alt="" coords="78,153,236,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="109,103,136,138,131,142,105,107"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="130,196,73,235,70,230,127,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="101,241,154,267"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="152,195,140,227,135,226,147,193"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="179,241,244,267"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="173,192,197,227,192,230,168,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="268,241,326,267"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="193,192,264,231,261,236,191,196"/>
+</map>

@@ -51,7 +51,7 @@
             <tr id="projectrow">
               <td id="projectalign">
                 <div id="projectname">Drzewo BST<span
-                    id="projectnumber">&#160;v0.3.0</span>
+                    id="projectnumber">&#160;v0.3.1</span>
                 </div>
               </td>
             </tr>
@@ -126,7 +126,7 @@ $(function(){initNavTree('binary__search__tree_8cpp.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
-<p>Binary Search Tree.  
+<p>Implementacja metod klasy <a class="el" href="classBinarySearchTree.html" title="Klasa reprezentująca drzewo przeszukiwań binarnych (BST).">BinarySearchTree</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
@@ -142,14 +142,18 @@ Include dependency graph for binary_search_tree.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1a70dcd289f4622da3844e852b2b4608" id="r_a1a70dcd289f4622da3844e852b2b4608"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a70dcd289f4622da3844e852b2b4608">operator&gt;&gt;</a> (std::istream &amp;iStream, BinaryTreeTraversalMethod &amp;traversalMethod)</td></tr>
-<tr class="memdesc:a1a70dcd289f4622da3844e852b2b4608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora &gt;&gt; do wyboru opcji.  <br /></td></tr>
+<tr class="memitem:a1a70dcd289f4622da3844e852b2b4608" id="r_a1a70dcd289f4622da3844e852b2b4608"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a70dcd289f4622da3844e852b2b4608">operator&gt;&gt;</a> (std::istream &amp;iStream, <a class="el" href="binary__search__tree_8hpp.html#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a> &amp;traversalMethod)</td></tr>
+<tr class="memdesc:a1a70dcd289f4622da3844e852b2b4608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora &gt;&gt; do wyboru metody przeglądania drzewa.  <br /></td></tr>
 <tr class="separator:a1a70dcd289f4622da3844e852b2b4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Binary Search Tree. </p>
-<dl class="section author"><dt>Author</dt><dd>Marcin Dudek &amp; Mateusz Basiaga </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-10-23</dd></dl>
+<div class="textblock"><p>Implementacja metod klasy <a class="el" href="classBinarySearchTree.html" title="Klasa reprezentująca drzewo przeszukiwań binarnych (BST).">BinarySearchTree</a>. </p>
+<p>Zawiera definicje metod klasy <a class="el" href="classBinarySearchTree.html" title="Klasa reprezentująca drzewo przeszukiwań binarnych (BST).">BinarySearchTree</a>, obsługujące operacje na drzewie BST, takie jak dodawanie, usuwanie, znajdowanie ścieżek, wyświetlanie oraz zapisywanie i wczytywanie z plików. </p><dl class="section date"><dt>Date</dt><dd>2024-10-23 </dd></dl>
+<dl class="section author"><dt>Authors</dt><dd><ul>
+<li>Marcin Dudek</li>
+<li>Mateusz Basiaga</li>
+</ul>
+</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1a70dcd289f4622da3844e852b2b4608" name="a1a70dcd289f4622da3844e852b2b4608"></a>
@@ -166,16 +170,16 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BinaryTreeTraversalMethod &amp;</td>          <td class="paramname"><span class="paramname"><em>traversalMethod</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="binary__search__tree_8hpp.html#a7130a834f6f47edcdd9f0b7f5e3118ed">BinaryTreeTraversalMethod</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>traversalMethod</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Przeciążenie operatora &gt;&gt; do wyboru opcji. </p>
+<p>Przeciążenie operatora &gt;&gt; do wyboru metody przeglądania drzewa. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">iStream</td><td>Strumień wejściowy. </td></tr>
-    <tr><td class="paramname">traversalMethod</td><td>Enum, który należy ustawić. </td></tr>
+    <tr><td class="paramname">traversalMethod</td><td>Metoda przeglądania, którą należy ustawić. </td></tr>
   </table>
   </dd>
 </dl>

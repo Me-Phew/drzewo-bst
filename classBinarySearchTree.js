@@ -1,5 +1,7 @@
 var classBinarySearchTree =
 [
+    [ "BinarySearchTree", "classBinarySearchTree.html#a5351a78a161520116785f8eefbb91183", null ],
+    [ "~BinarySearchTree", "classBinarySearchTree.html#a7e6fd54bec4c539cfcb8404b1ff3f98d", null ],
     [ "addItem", "classBinarySearchTree.html#a569f6481ead5d87f27292512453ae4d6", null ],
     [ "destroy", "classBinarySearchTree.html#a9f51eebe01d03b16c8768461c6af8e13", null ],
     [ "display", "classBinarySearchTree.html#a3bbbdb727cf4324a639aeb26cc915223", null ],

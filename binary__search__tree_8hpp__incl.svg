@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Binary Search Tree.">
+<g id="a_Node000001"><a xlink:title="Implementacja drzewa przeszukiwań binarnych (BST).">
 <polygon fill="#999999" stroke="#666666" points="182.12,-85.75 63.38,-85.75 63.38,-55.25 182.12,-55.25 182.12,-85.75"/>
 <text text-anchor="start" x="71.38" y="-72.25" font-family="Helvetica,sans-Serif" font-size="10.00">src/binary_search_tree</text>
 <text text-anchor="middle" x="122.75" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">/binary_search_tree.hpp</text>

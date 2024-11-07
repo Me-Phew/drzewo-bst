@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3e_3e_0',['operator&gt;&gt;',['../app_8cpp.html#af4cc8f6d9deb89b3330b11b9587229f6',1,'operator&gt;&gt;(std::istream &amp;iStream, MenuOption &amp;menuOption):&#160;app.cpp'],['../app_8hpp.html#af4cc8f6d9deb89b3330b11b9587229f6',1,'operator&gt;&gt;(std::istream &amp;iStream, MenuOption &amp;menuOption):&#160;app.cpp'],['../binary__search__tree_8cpp.html#a1a70dcd289f4622da3844e852b2b4608',1,'operator&gt;&gt;(std::istream &amp;iStream, BinaryTreeTraversalMethod &amp;traversalMethod):&#160;binary_search_tree.cpp'],['../binary__search__tree_8hpp.html#a1a70dcd289f4622da3844e852b2b4608',1,'operator&gt;&gt;(std::istream &amp;iStream, BinaryTreeTraversalMethod &amp;traversalMethod):&#160;binary_search_tree.cpp']]]
+  ['loadfrombinaryfile_0',['loadFromBinaryFile',['../classBinarySearchTree.html#acb40a740eedd0ea87078ed5c88ee868b',1,'BinarySearchTree']]],
+  ['loadfromtextfile_1',['loadFromTextFile',['../classBinarySearchTree.html#adfb9c9de8ad646ef8199209776fa743c',1,'BinarySearchTree']]]
 ];

@@ -51,7 +51,7 @@
             <tr id="projectrow">
               <td id="projectalign">
                 <div id="projectname">Drzewo BST<span
-                    id="projectnumber">&#160;v0.3.0</span>
+                    id="projectnumber">&#160;v0.3.1</span>
                 </div>
               </td>
             </tr>
@@ -124,71 +124,81 @@ $(function(){initNavTree('app_8hpp_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="app_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef APP_HPP</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define APP_HPP</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="binary__search__tree_8hpp.html">../binary_search_tree/binary_search_tree.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef APP_HPP</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define APP_HPP</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">   19</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a> {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  INSERT_ITEM = 1,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  DELETE_ITEM,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  FIND_PATH_TO_ITEM,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  DISPLAY_TREE,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  DELETE_TREE,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  SAVE_TREE,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  LOAD_TREE,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  LOAD_TREE_TEXT,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  LOAD_TREE_TEXT_APPEND,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">EXIT</a>                        </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">   30</a></span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="binary__search__tree_8hpp.html">../binary_search_tree/binary_search_tree.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">   22</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7">   23</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7">INSERT_ITEM</a> = 1,            </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507">   24</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507">DELETE_ITEM</a>,                </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735">   25</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735">FIND_PATH_TO_ITEM</a>,          </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9">   27</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9">DISPLAY_TREE</a>,               </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65">   28</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65">DELETE_TREE</a>,                </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192">   29</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192">SAVE_TREE</a>,                  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc">   30</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc">LOAD_TREE</a>,                  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617">   31</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617">LOAD_TREE_TEXT</a>,             </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007">   32</a></span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007">LOAD_TREE_TEXT_APPEND</a>,      </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_enumvalue" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">EXIT</a>                        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">   35</a></span>};</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>std::istream&amp; <a class="code hl_function" href="app_8hpp.html#af4cc8f6d9deb89b3330b11b9587229f6">operator&gt;&gt;</a>(std::istream&amp; iStream, <a class="code hl_enumeration" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a>&amp; menuOption);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classApp.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classApp.html">App</a> {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> <a class="code hl_class" href="classBinarySearchTree.html">BinarySearchTree</a> binarySearchTree; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>std::istream&amp; <a class="code hl_function" href="app_8hpp.html#af4cc8f6d9deb89b3330b11b9587229f6">operator&gt;&gt;</a>(std::istream&amp; iStream, <a class="code hl_enumeration" href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a>&amp; menuOption);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="classApp.html">App</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="classApp.html">App</a>(<span class="keyword">const</span> <a class="code hl_class" href="classApp.html">App</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="classApp.html">App</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classApp.html">App</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> mainMenu();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleInsertItem();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDeleteItem();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleFindPathToItem();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDisplayTree();</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classApp.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classApp.html">App</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">static</span> <a class="code hl_class" href="classBinarySearchTree.html">BinarySearchTree</a> binarySearchTree; </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="classApp.html">App</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="classApp.html">App</a>(<span class="keyword">const</span> <a class="code hl_class" href="classApp.html">App</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="classApp.html">App</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classApp.html">App</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> mainMenu();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleInsertItem();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDeleteTree();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleSaveBinaryTree();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleLoadBinaryTree();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDeleteItem();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleFindPathToItem();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleLoadTextFile(<span class="keywordtype">bool</span> clearExisting);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// Funkcja zakończenia działania aplikacji</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDisplayTree();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> handleExit();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classApp.html#a8d27eeb51b813760dc39425d7a9a37e2">run</a>();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleDeleteTree();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleSaveBinaryTree();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleLoadBinaryTree();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> handleLoadTextFile(<span class="keywordtype">bool</span> clearExisting);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> handleExit();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classApp.html#a8d27eeb51b813760dc39425d7a9a37e2">run</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif </span><span class="comment">/* APP_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120d"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a></div><div class="ttdeci">MenuOption</div><div class="ttdoc">Wyliczenie opcji dostępnych w menu. Definiuje różne operacje, które użytkownik może wybrać w aplikacj...</div><div class="ttdef"><b>Definition</b> app.hpp:19</div></div>
-<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">EXIT</a></div><div class="ttdeci">@ EXIT</div><div class="ttdoc">Zakończ działanie aplikacji.</div><div class="ttdef"><b>Definition</b> app.hpp:29</div></div>
-<div class="ttc" id="aapp_8hpp_html_af4cc8f6d9deb89b3330b11b9587229f6"><div class="ttname"><a href="app_8hpp.html#af4cc8f6d9deb89b3330b11b9587229f6">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;iStream, MenuOption &amp;menuOption)</div><div class="ttdoc">Przeciążenie operatora &gt;&gt; do wyboru opcji menu.</div><div class="ttdef"><b>Definition</b> app.cpp:18</div></div>
-<div class="ttc" id="abinary__search__tree_8hpp_html"><div class="ttname"><a href="binary__search__tree_8hpp.html">binary_search_tree.hpp</a></div><div class="ttdoc">Binary Search Tree.</div></div>
-<div class="ttc" id="aclassApp_html"><div class="ttname"><a href="classApp.html">App</a></div><div class="ttdoc">Klasa reprezentująca aplikację obsługującą drzewo przeszukiwań binarnych. Umożliwia operacje takie ja...</div><div class="ttdef"><b>Definition</b> app.hpp:40</div></div>
-<div class="ttc" id="aclassApp_html_a8d27eeb51b813760dc39425d7a9a37e2"><div class="ttname"><a href="classApp.html#a8d27eeb51b813760dc39425d7a9a37e2">App::run</a></div><div class="ttdeci">static int run()</div><div class="ttdoc">Uruchamia aplikację. Wyświetla menu i pozwala użytkownikowi wykonywać operacje na drzewie.</div><div class="ttdef"><b>Definition</b> app.cpp:101</div></div>
-<div class="ttc" id="aclassBinarySearchTree_html"><div class="ttname"><a href="classBinarySearchTree.html">BinarySearchTree</a></div><div class="ttdef"><b>Definition</b> binary_search_tree.hpp:32</div></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* APP_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120d"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120d">MenuOption</a></div><div class="ttdeci">MenuOption</div><div class="ttdoc">Wyliczenie opcji dostępnych w menu. Definiuje różne operacje, które użytkownik może wybrać w aplikacj...</div><div class="ttdef"><b>Definition</b> app.hpp:22</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da0688f1ea0b5887e1782e525ca7554507">DELETE_ITEM</a></div><div class="ttdeci">@ DELETE_ITEM</div><div class="ttdoc">Usunięcie elementu z drzewa.</div><div class="ttdef"><b>Definition</b> app.hpp:24</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da1b8c2c6f392aeb13ebde83b167714735">FIND_PATH_TO_ITEM</a></div><div class="ttdeci">@ FIND_PATH_TO_ITEM</div><div class="ttdoc">Znalezienie ścieżki do wybranego elementu.</div><div class="ttdef"><b>Definition</b> app.hpp:25</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da53181643edfa4d6f709dd9023e1cd1e7">INSERT_ITEM</a></div><div class="ttdeci">@ INSERT_ITEM</div><div class="ttdoc">Wstawienie elementu do drzewa.</div><div class="ttdef"><b>Definition</b> app.hpp:23</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da663cb6e308b3c9988923e3fb643ef0bc">LOAD_TREE</a></div><div class="ttdeci">@ LOAD_TREE</div><div class="ttdoc">Wczytanie drzewa z pliku binarnego.</div><div class="ttdef"><b>Definition</b> app.hpp:30</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da699e9bacd4ed8ba5c79328f47cdf5b65">DELETE_TREE</a></div><div class="ttdeci">@ DELETE_TREE</div><div class="ttdoc">Usunięcie całego drzewa.</div><div class="ttdef"><b>Definition</b> app.hpp:28</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7a10b5d68d31711288e1fe0fa17dbf4f">EXIT</a></div><div class="ttdeci">@ EXIT</div><div class="ttdoc">Zakończenie działania aplikacji.</div><div class="ttdef"><b>Definition</b> app.hpp:34</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120da7e7fe8e5f6cd28127c385903ee0b0617">LOAD_TREE_TEXT</a></div><div class="ttdeci">@ LOAD_TREE_TEXT</div><div class="ttdoc">Wczytanie drzewa z pliku tekstowego (zastąpienie obecnego).</div><div class="ttdef"><b>Definition</b> app.hpp:31</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daa7dba5888cf3435bad79a6480e78c192">SAVE_TREE</a></div><div class="ttdeci">@ SAVE_TREE</div><div class="ttdoc">Zapisanie drzewa do pliku.</div><div class="ttdef"><b>Definition</b> app.hpp:29</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daea1e14db6aa167512b730e5cf0c975a9">DISPLAY_TREE</a></div><div class="ttdeci">@ DISPLAY_TREE</div><div class="ttdoc">Wyświetlenie struktury drzewa.</div><div class="ttdef"><b>Definition</b> app.hpp:27</div></div>
+<div class="ttc" id="aapp_8hpp_html_a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007"><div class="ttname"><a href="app_8hpp.html#a5be5e47a3042bc91460d05e47f32120daf0e7f0df249fd1aa41fe9f7d1b9de007">LOAD_TREE_TEXT_APPEND</a></div><div class="ttdeci">@ LOAD_TREE_TEXT_APPEND</div><div class="ttdoc">Wczytanie drzewa z pliku tekstowego (dodanie do obecnego).</div><div class="ttdef"><b>Definition</b> app.hpp:32</div></div>
+<div class="ttc" id="aapp_8hpp_html_af4cc8f6d9deb89b3330b11b9587229f6"><div class="ttname"><a href="app_8hpp.html#af4cc8f6d9deb89b3330b11b9587229f6">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;iStream, MenuOption &amp;menuOption)</div><div class="ttdoc">Przeciążenie operatora &gt;&gt; do wyboru opcji menu.</div><div class="ttdef"><b>Definition</b> app.cpp:21</div></div>
+<div class="ttc" id="abinary__search__tree_8hpp_html"><div class="ttname"><a href="binary__search__tree_8hpp.html">binary_search_tree.hpp</a></div><div class="ttdoc">Implementacja drzewa przeszukiwań binarnych (BST).</div></div>
+<div class="ttc" id="aclassApp_html"><div class="ttname"><a href="classApp.html">App</a></div><div class="ttdoc">Klasa reprezentująca aplikację obsługującą drzewo przeszukiwań binarnych. Umożliwia operacje takie ja...</div><div class="ttdef"><b>Definition</b> app.hpp:45</div></div>
+<div class="ttc" id="aclassApp_html_a8d27eeb51b813760dc39425d7a9a37e2"><div class="ttname"><a href="classApp.html#a8d27eeb51b813760dc39425d7a9a37e2">App::run</a></div><div class="ttdeci">static int run()</div><div class="ttdoc">Uruchamia aplikację. Wyświetla menu i pozwala użytkownikowi wykonywać operacje na drzewie.</div><div class="ttdef"><b>Definition</b> app.cpp:104</div></div>
+<div class="ttc" id="aclassBinarySearchTree_html"><div class="ttname"><a href="classBinarySearchTree.html">BinarySearchTree</a></div><div class="ttdoc">Klasa reprezentująca drzewo przeszukiwań binarnych (BST).</div><div class="ttdef"><b>Definition</b> binary_search_tree.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

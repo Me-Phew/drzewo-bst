@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Deklaracje funkcji i klasy aplikacji obsługującej drzewo przeszukiwań binarnych.">
 <polygon fill="#999999" stroke="#666666" points="133,-74.5 48,-74.5 48,-55.25 133,-55.25 133,-74.5"/>
 <text text-anchor="middle" x="90.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">src/app/app.hpp</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="app_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="app_8cpp.html" target="_top" xlink:title="Implementacja menu aplikacji zarządzającej drzewem wyszukiwań binarnych.">
 <polygon fill="white" stroke="#666666" points="85,-19.25 0,-19.25 0,0 85,0 85,-19.25"/>
 <text text-anchor="middle" x="42.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">src/app/app.cpp</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="src_2main_8cpp.html" target="_top" xlink:title="Binary Search Tree.">
+<g id="a_Node000003"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Punkt wejścia aplikacji zarządzającej drzewem wyszukiwań binarnych.">
 <polygon fill="white" stroke="#666666" points="174.25,-19.25 102.75,-19.25 102.75,0 174.25,0 174.25,-19.25"/>
 <text text-anchor="middle" x="138.5" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>
