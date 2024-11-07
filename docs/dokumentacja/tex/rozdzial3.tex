@@ -32,21 +32,37 @@ Projekt jest skonfigurowany do kompilacji zarówno na systemach Linux jak i Wind
 Struktura katalogów projektu jest następująca:
 
 \begin{itemize}
-	\item \texttt{src/} - Główny katalog zawierający kod źródłowy.
-	\item \texttt{include/} - Katalog z plikami nagłówkowymi.
-	\item \texttt{docs/} - Katalog z dokumentacją wygenerowaną przez Doxygen oraz LaTeX.
-	\item \texttt{build/} - Katalog używany do przechowywania plików generowanych przez system budowania (np. pliki obiektowe, pliki wykonywalne).
-	\item \texttt{tests/} - Katalog zawierający testy jednostkowe.
+	\item \texttt{src/} - Główny katalog zawierający kod źródłowy. Widać to na rysunku \textbf{3.1}
+	      \begin{figure}[htb!]
+		      \centering
+		      \includegraphics[width=0.4\linewidth]{rys/src.png}
+		      \caption{Katalog src}
+	      \end{figure}
+	\item \texttt{build/} - Katalog używany do przechowywania plików generowanych przez system budowania (np. pliki obiektowe, pliki wykonywalne.) Widać to na rysunku \textbf{3.2}
+	      \begin{figure}[htb!]
+		      \centering
+		      \includegraphics[width=0.3\linewidth]{rys/docs.png}
+		      \caption{Katalog build}
+	      \end{figure}
+	      \newpage
+	\item \texttt{docs/} - Katalog używany do przechowywania plików generowanych przez system budowania (np. pliki obiektowe, pliki wykonywalne). Widać to na rysunku \textbf{3.3}
+	      \begin{figure}[htb!]
+		      \centering
+		      \includegraphics[width=0.4\linewidth]{rys/kat_dosc.png}
+		      \caption{Katalog docs}
+	      \end{figure}
 \end{itemize}
+
+\newpage
 
 \subsection{Diagramy i schematy}
 
-% \begin{figure}[h!]
-% 	\centering
-% 	\includegraphics[width=0.8\textwidth]{uml_diagram.png}
-% 	\caption{Diagram UML klas aplikacji - pokazuje zależności między klasami BinarySearchTree oraz App.}
-% 	\label{fig:uml_diagram}
-% \end{figure}
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=\textwidth]{rys/uml_diagram.png}
+	\caption{Diagram UML klas aplikacji - pokazuje zależności między klasami BinarySearchTree oraz App.}
+	\label{fig:uml_diagram}
+\end{figure}
 
 W projekcie zastosowano klasy \texttt{BinarySearchTree} oraz \texttt{App}. Klasa \texttt{BinarySearchTree} odpowiada za przechowywanie struktury drzewa oraz wykonanie operacji na drzewie (dodawanie, usuwanie, przeglądanie). Klasa \texttt{App} zapewnia interfejs użytkownika oraz umożliwia zarządzanie drzewem za pomocą menu.
 
@@ -54,6 +70,8 @@ W projekcie zastosowano klasy \texttt{BinarySearchTree} oraz \texttt{App}. Klasa
 	\item \textbf{Klasa BinarySearchTree:} Przechowuje dane drzewa oraz implementuje operacje na nim, takie jak dodawanie elementów, usuwanie, przeglądanie w różnych metodach (preorder, inorder, postorder).
 	\item \textbf{Klasa App:} Zapewnia menu, które umożliwia użytkownikowi interakcję z drzewem: dodawanie, usuwanie elementów oraz wyświetlanie struktury drzewa.
 \end{itemize}
+
+\newpage
 
 \subsection{Git i narzędzia CI/CD}
 

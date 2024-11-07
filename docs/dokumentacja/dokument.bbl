@@ -16,5 +16,76 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{www2}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Strona internetowa Wikipedia}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Binary_search_tree
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Binary_search_tree
+      \endverb
+    \endentry
+    \entry{www3}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Strona internetowa TreeConverter}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://treeconverter.com/
+      \endverb
+      \verb{url}
+      \verb https://treeconverter.com/
+      \endverb
+    \endentry
+    \entry{GitHubProject}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Repozytorium projektu na platformie GitHub}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/Me-Phew/drzewo-bst
+      \endverb
+      \verb{url}
+      \verb https://github.com/Me-Phew/drzewo-bst
+      \endverb
+    \endentry
+    \entry{GitHubProjectTemplate}{online}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{Szablon utworzony na potrzeby projektu (repozytorium GitHub)}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/Me-Phew/programowanie-zaawansowane-template
+      \endverb
+      \verb{url}
+      \verb https://github.com/Me-Phew/programowanie-zaawansowane-template
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
